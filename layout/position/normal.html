@@ -10,11 +10,14 @@
       p.relative {
         position: relative;
         top: -20px;
+        z-index: 10; /* 越大越靠上 */
       }
       p.absolute {
         position: absolute;
         top: 22px;
         left: 30px;
+        background-color: lightblue;
+        z-index: 9;
       }
     </style>
   </head>
@@ -27,7 +30,7 @@
     <p class="relative">This is relative text. Even if it's moved, its original position is still preserved. Check the following text.</p>
     <p>Some text.</p>
     <div class="fixed">
-      <p class="absolute">This is absolute text, based on located parent.</p>
+      <p class="absolute">This is absolute text, based on parent.</p>
     </div>
   </body>
 </html>
