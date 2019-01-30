@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.sticky_top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: antiquewhite;
+        border: 2px solid #4CAF50;
+      }
+      div.sticky_bottom {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+        padding: 5px;
+        background-color: gainsboro;
+        border: 2px solid #4CAF50;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>试试滚动页面</p>
+    <div class="sticky_top">我会固定在页顶</div>
+    <div style="margin-bottom: 1000px;">
+      <p>很长很长的内容</p>
+      <p>很长很长的内容</p>
+      <p>很长很长的内容</p>
+      <p>很长很长的内容</p>
+      <p>很长很长的内容</p>
+      <p>很长很长的内容</p>
+    </div>
+    <div class="sticky_bottom">我会固定在页底</div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .fixed {
+        position: fixed;
+        top: 22px;
+        left: 30px;
+      }
+      p.relative {
+        position: relative;
+        top: -20px;
+      }
+      p.absolute {
+        position: absolute;
+        top: 22px;
+        left: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Some text.</p>
+    <p>Some text.</p>
+    <p>Some text.</p>
+    <p class="fixed">This is fixed text, based on window.</p>
+    <p class="relative">This is relative text. Even if it's moved, its original position is still preserved. Check the following text.</p>
+    <p>Some text.</p>
+    <div class="fixed">
+      <p class="absolute">This is absolute text, based on located parent.</p>
+    </div>
+  </body>
+</html>
