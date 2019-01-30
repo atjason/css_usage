@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.container p {
+        color: #f00;
+      }
+
+      /* 子元素选择器，应放在后代属性之后，不然会被覆盖。*/
+      div.container>p {
+        color: #0f0;
+      }
+
+      div~p {
+        color: blue;
+      }
+
+      /* 相邻兄弟选择器，应放在后续兄弟选择器之后，不然会被覆盖。*/
+      div+p {
+        color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <p>子元素选择器(child selectors)(以大于号 > 分隔）</p>
+      <div>
+        <p>后代选择器(以空格 分隔)</p>
+      </div>
+    </div>
+
+    <p>相邻兄弟选择器(adjacent sibling selector)（以加号 + 分隔）</p>
+    <p>后续兄弟选择器（以破折号 ~ 分隔）</p>
+
+  </body>
+</html>
