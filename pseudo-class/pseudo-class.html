@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      span:first-child {
+        color: red;
+      }
+
+      p span:first-child {
+        color: green;
+      }
+
+      :lang(en) > q { 
+        quotes: '\201C' '\201D' '\2018' '\2019'; 
+      }
+      :lang(cn) > q { 
+        quotes: '『' '』' '“' '”'; 
+      }
+
+      input:focus {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <span>Hello</span>
+      <span>World</span>
+    </div>
+    <p>
+      <span>Hello</span>
+      <span>Again</span>
+    </p>
+
+    <div lang="en">
+      <q>This English quote has a <q>nested</q> quote inside.</q>
+    </div>
+    <div lang="cn">
+      <q>中文引号有个<q>嵌套</q>引号。</q>
+    </div>
+
+    <input>
+    <input>
+  </body>
+</html>
