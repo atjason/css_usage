@@ -1,0 +1,67 @@
+<!-- http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        height: 100%;
+        width: 15%;
+        overflow: scroll;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+
+      li a {
+        display: block;
+        padding: 8px 16px;
+        color: black;
+        text-decoration: none;
+      }
+
+      li a.active {
+        color: white;
+        background-color: green;
+      }
+      
+      li a:hover:not(.active) {
+        color: white;
+        background-color: #555;
+      }
+
+      div.container {
+        margin-left: 17%;
+        margin-bottom: 1000px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="container">
+      <h2>Fixed Full-height Side Nav</h2>
+      <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+  </body>
+</html>
