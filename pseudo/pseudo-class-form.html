@@ -1,0 +1,143 @@
+<!-- http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input:checked + label {
+        color: green;
+      }
+
+      button:default {
+        color: white;
+        background-color: green;
+      }
+
+      div.enabled_disabled input:enabled {
+        background-color: lightgreen;
+      }
+      div.enabled_disabled input:disabled {
+        background-color: lightgray;
+      }
+
+      div.empty div {
+        width: 50px;
+        height: 30px;
+        margin: 5px;
+        background-color: lightgray;
+      }
+
+      div.empty div:empty {
+        background-color: yellow;
+      }
+
+      div.in-range input:in-range {
+        color: white;
+        background-color: green;
+      }
+      div.in-range input:out-of-range {
+        color: white;
+        background-color: red;
+      }
+
+      div.indeterminate :indeterminate + label {
+        background-color: yellow;
+      }
+
+      div.valid :valid {
+        color: white;
+        background-color: green;
+      }
+      div.valid :invalid {
+        color: black;
+        background-color: yellow;
+      }
+
+      div.required :optional {
+        background-color: gray;
+      }
+      div.required :required {
+        background-color: green;
+      }
+
+      div.read-only :read-only {
+        background-color: gray;
+      }
+
+      div.read-write :read-write:focus {
+        color: white;
+        background-color: green;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h2>checked</h2>
+    <input type="checkbox">
+    <label>Agree</label>
+
+    <h2>default</h2>
+    <form>
+      <p>The submit button is default in form.</p>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>enabled / disabled</h2>
+    <div class="enabled_disabled">
+      <input type="text">
+      <input type="text" disabled>
+    </div>
+
+    <h2>empty</h2>
+    <div class="empty">
+      <div>Hello</div>
+      <div> </div>
+      <div></div>
+    </div>
+
+    <h2>in-range / out-of-range</h2>
+    <div class="in-range">
+      <input type="number" min="5" max="10" value=4>
+    </div>
+
+    <h2>indeterminate</h2>
+    <div class="indeterminate">
+      <ul>
+        <li>
+            <input type="radio" name="list" id="option1">
+            <label>Option 1</label>
+        </li>
+        <li>
+            <input type="radio" name="list" id="option2">
+            <label>Option 2</label>
+        </li>
+        <li>
+            <input type="radio" name="list" id="option3">
+            <label>Option 3</label>
+        </li>
+      </ul>
+    </div>
+
+    <h2>valid / invalid</h2>
+    <div class="valid">
+      <input type="email">
+    </div>
+
+    <h2>required / optional</h2>
+    <div class="required">
+      <input type="text" required>
+      <input type="text">
+    </div>
+
+    <h2>read-only</h2>
+    <div class="read-only">
+      <input type="text" readonly>
+    </div>
+
+    <h2>read-write / focus</h2>
+    <div class="read-write">
+      <input type="text">
+    </div>
+    
+  </body>
+</html>

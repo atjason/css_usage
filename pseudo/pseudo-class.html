@@ -1,0 +1,162 @@
+<!-- http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a:link {
+        color: blue;
+        text-decoration: none;
+      }
+      a:visited {
+        color: gray;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: lightgray; 
+        text-decoration: underline;
+      }
+      a:active {
+        background-color: gray;
+        text-decoration: underline;
+      }
+
+      ul.not li:not(:first-child) {
+        color: orange;
+      }
+
+      ul.first-child li:first-child {
+        color: orange;
+      }
+
+      ul.last-child li:last-child {
+        color: orange;
+      }
+
+      ul.first-of-type :first-of-type {
+        color: orange;
+      }
+
+      ul.last-of-type :last-of-type {
+        color: orange;
+      }
+
+      ul.nth-child li:nth-child(2n) {
+        color: orange;
+      }
+
+      ul.nth-last-child li:nth-last-child(2n) {
+        color: orange;
+      }
+
+      ul.nth-of-type li:nth-of-type(2n) {
+        color: orange;
+      }
+
+      ul.nth-last-of-type li:nth-last-of-type(2n) {
+        color: orange;
+      }
+
+      ul.only-child li:only-child {
+        color: orange;
+      }
+
+      ul.only-of-type :only-of-type {
+        color: orange;
+      }
+
+      :target {
+        background: yellow;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h2>link state</h2>
+    <a href="#">Link</a>
+
+    <h2>not</h2>
+    <ul class="not">
+      <li>First child.</li>
+      <li>Not first child has orange color.</li>
+      <li>Not first child has orange color.</li>
+    </ul>
+
+    <h2>first-child</h2>
+    <ul class="first-child">
+      <li>First child has orange color.</li>
+      <li>Item.</li>
+      <li>Item.</li>
+    </ul>
+
+    <h2>last-child</h2>
+    <ul class="last-child">
+      <li>Item.</li>
+      <li>Item.</li>
+      <li>Last child has orange color.</li>
+    </ul>
+
+    <h2>first-of-type</h2>
+    <ul class="first-of-type">
+      <li>First li has orange color.</li>
+      <li>Item: <span>First span has orange color.</span></li>
+      <li>Item.</li>
+    </ul>
+
+    <h2>last-of-type</h2>
+    <ul class="last-of-type">
+      <li>Item.</li>
+      <li>Item: <span>Last span has orange color.</span></li>
+      <li>Last li has orange color.</li>
+    </ul>
+
+    <h2>nth-child</h2>
+    <ul class="nth-child">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <h2>nth-last-child</h2>
+    <ul class="nth-last-child">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <h2>nth-of-type</h2>
+    <ul class="nth-of-type">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <h2>nth-last-of-type</h2>
+    <ul class="nth-last-of-type">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <h2>only-child</h2>
+    <ul class="only-child">
+      <li>The only child has orange color.</li>
+    </ul>
+
+    <h2>only-of-type</h2>
+    <ul class="only-of-type">
+      <li>The only li has orange color.</li>
+      <p>The only p has orange color.</p>
+    </ul>
+    
+    <div id="target">
+      <h1>target pseudo-class</h1>
+      <p>Open with http://...html#target</p>
+    </div>
+
+  </body>
+</html>
