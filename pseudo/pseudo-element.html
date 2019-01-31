@@ -1,0 +1,56 @@
+<!-- http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.before ::before {
+        content: 'Hello '
+      }
+
+      div.after ::after {
+        content: ', too.'
+      }
+
+      div.first-letter ::first-letter {
+        font-size: 3em;
+      }
+
+      div.first-line ::first-line {
+        color: orange;
+      }
+
+      div.selection ::selection {
+        color: orange;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h2>before</h2>
+    <div class="before">
+      <p>World.</p>
+    </div>
+
+    <h2>after</h2>
+    <div class="after">
+      <p>I'm glad</p>
+    </div>
+
+    <h2>first-letter</h2>
+    <div class="first-letter">
+      <p>Hello World.</p>
+    </div>
+
+    <h2>first-line</h2>
+    <div class="first-line">
+      <p>Hello World.<br />Hello World</p>
+    </div>
+
+    <h2>selection</h2>
+    <div class="selection">
+      <p>Hello World.</p>
+    </div>
+    
+  </body>
+</html>

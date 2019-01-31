@@ -68,6 +68,13 @@
         background: yellow;
       }
 
+      :lang(en) {
+        quotes: '"' '"' ''' ''';
+      }
+      :lang(cn) {
+        quotes:  '『 ''』' '「 ''」';
+      }
+
     </style>
   </head>
 
@@ -158,5 +165,8 @@
       <p>Open with http://...html#target</p>
     </div>
 
+    <h2></h2>
+    <p lang="en"><q>My name is <q>Tom</q>.</q></p>
+    <p lang="cn"><q>我的名字是<q>帅哥</q></q></p>
   </body>
 </html>
