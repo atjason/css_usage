@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.dropdown {
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        color: white;
+        background-color: yellowgreen;
+        text-align: center;
+      }
+
+      div.dropdown:hover {
+        cursor: pointer;
+        background-color: green;
+      }
+
+      div.dropdown:hover div.dropdown-content {
+        display: block;
+        border-top: solid 1px white;
+      }
+
+      div.dropdown-content {
+        display: none;
+        position: absolute;
+        width: 120px;
+        min-height: 58px;
+        line-height: 32px;
+        color: white;
+        background-color: green;
+        text-align: center;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+      }
+
+      div.dropdown-content p {
+        line-height: 12px;
+        padding-bottom: 12px;
+        border-bottom: solid 1px gray;
+      }
+
+      div.dropdown-content p:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="dropdown">
+      <span>Mouse Over Me</span>
+      <div class="dropdown-content">
+        <p>Hello World</p>
+        <p>Hello Again</p>
+      </div>
+    </div>
+  </body>
+</html>
