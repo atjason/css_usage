@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+      }
+
+      div.linear_top_bottom {
+        background: linear-gradient(lightgreen, yellow)
+      }
+
+      div.linear_left_right {
+        background: linear-gradient(to right, lightgreen, yellow);
+      }
+
+      div.linear_to_bottom_right {
+        background: linear-gradient(to bottom right, lightgreen, yellow);
+      }
+
+      div.linear_angle {
+        background: linear-gradient(90deg, lightgreen, yellow);
+      }
+
+      div.linear_multi_color {
+        width: 400px;
+        background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+      }
+
+      div.linear_transparent {
+        background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+      }
+
+      div.linear_repeating {
+        width: 400px;
+        background: repeating-linear-gradient(to right, red, blue 20%, yellow 50%);
+      }
+
+      div.radial_basic {
+        background: radial-gradient(red, blue)
+      }
+
+      div.radial_circle {
+        width: 200px;
+        background: radial-gradient(circle, red, blue)
+      }
+
+      div.radial_multi_color {
+        background: radial-gradient(red, blue 30%, green 60%)
+      }
+
+      div.radial_repeating {
+        background: repeating-radial-gradient(red, blue 30%, green 60%)
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Linear Gradient</h2>
+
+    <h3>Top to bottom</h3>
+    <div class="linear_top_bottom"></div>
+
+    <h3>Left to right</h3>
+    <div class="linear_left_right"></div>
+
+    <h3>Top left to bottom right</h3>
+    <div class="linear_to_bottom_right"></div>
+
+    <h3>Use angle</h3>
+    <a href="http://www.runoob.com/css3/css3-gradients.html">Angle explanation</a><br/>
+    <img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzr4ha98oyj30n80j0wg2.jpg" width="300px" />
+    <div class="linear_angle"></div>
+
+    <h3>Multi color</h3>
+    <div class="linear_multi_color"></div>
+
+    <h3>Transparent</h3>
+    <div class="linear_transparent"></div>
+
+    <h3>Repeating</h3>
+    <p>repeating-linear-gradient(to right, red, blue 20%, yellow 50%);</p>
+    <p>Starts with red, change to blue when reach 20%, change to yellow when reach 50%, and then repeat.</p>
+    <div class="linear_repeating"></div>
+
+    <h2>Radial Gradient</h2>
+
+    <h3>Basic</h3>
+    <div class="radial_basic"></div>
+
+    <h3>Shape: circle</h3>
+    <div class="radial_circle"></div>
+
+    <h3>Multi color</h3>
+    <p>background: radial-gradient(red, blue 30%, green 60%)</p>
+    <p>Starts with red, change to blue when reach 30%, change to green when reach 60%.</p>
+    <div class="radial_multi_color"></div>
+
+    <h3>Repeating</h3>
+    <p>background: radial-gradient(red, blue 30%, green 60%)</p>
+    <p>Starts with red, change to blue when reach 30%, change to green when reach 60%. And then <b>repeat</b>.</p>
+    <div class="radial_repeating"></div>
+  </body>
+</html>
