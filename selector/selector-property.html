@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      [title=hello1] {
+        color: orange;
+      }
+
+      [lang|=en] {
+        color: blue;
+      }
+
+      [title*=hello2] {
+        color: yellowgreen;
+      }
+
+      [title~=hello2] {
+        color: green;
+      }
+
+      [title^=hello4] {
+        color: darkcyan;
+      }
+
+      [title$=hello5] {
+        color: darkblue;
+      }
+
+      /* [title=hello] {
+        color: orange;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <h2>title=hello1 (equal)</h2>
+    <p title="hello1">hello1</p>
+
+    <h2>lang|=en (equal or starts with and after with -)</h2>
+    <p lang="en">en</p>
+    <p lang="en-us">en-us</p>
+
+    <h2>title*=hello2 (includes word)</h2>
+    <p title="the hello2 world">the hello2 world</p>
+
+    <h2>title~=hello2 (includes)</h2>
+    <p title="thehello2world">thehello2world</p>
+
+    <h2>title^=hello4 (starts with)</h2>
+    <p title="hello44">hello44</p>
+
+    <h2>title$=hello5 (ends with)</h2>
+    <p title="the hello5">the hello5</p>
+
+  </body>
+</html>
