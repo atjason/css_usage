@@ -34,15 +34,20 @@
         border: none;
       }
 
-      div.dropdown-content p {
-        line-height: 12px;
-        padding-bottom: 12px;
+      div.dropdown-content a {
+        display: block;
+        color:white;
+        text-decoration: none;
         border-bottom: solid 1px gray;
       }
 
-      div.dropdown-content p:last-child {
+      div.dropdown-content a:last-child {
         border: none;
-        padding-bottom: 0;
+        padding-bottom: 2px;
+      }
+
+      div.dropdown-content a:hover {
+        background-color: gray;
       }
 
     </style>
@@ -52,8 +57,9 @@
     <div class="dropdown">
       <span>Mouse Over Me</span>
       <div class="dropdown-content">
-        <p>Hello World</p>
-        <p>Hello Again</p>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
       </div>
     </div>
   </body>
