@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 80px;
+        margin: 10px;
+      }
+
+      div.border-radius {
+        border-radius: 12px;
+        background-color: lightgreen;
+      }
+
+      div.border-shadow {
+        border-radius: 6px;
+        background-color: lightyellow;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1)
+      }
+
+      div.border-shadow:hover {
+        cursor: pointer;
+        box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.1)
+      }
+
+      div.border-image {
+        border: solid 10px white;
+        /* border-image: url("../images/border.png") 30 round; */
+        border-image-source: url("../images/border.png");
+        border-image-slice: 30;
+        border-image-width: 12px;
+        border-image-outset: 0;
+        border-image-repeat: repeat;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <a href="https://aotu.io/notes/2016/11/02/border-image/index.html">Tutorial</a>
+
+    <h2>border-radius</h2>
+    <div class="border-radius"></div>
+
+    <h2>border-shadow</h2>
+    <p>box-shadow: h-shadow v-shadow blur spread color inset;</p>
+    <div class="border-shadow"></div>
+
+    <h2>border-image</h2>
+    <p>border-image: source slice width outset repeat | round | stretch;</p>
+    <p>Safari doesn't work good for <i>round</i> mode.</p>
+    <div class="border-image">a</div>
+    <p>This is the original image.</p>
+    <img src="../images/border.png" />
+  </body>
+</html>
