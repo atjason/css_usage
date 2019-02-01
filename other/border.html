@@ -25,7 +25,10 @@
       }
 
       div.border-image {
-        border: solid 10px white;
+        background-clip: content-box;
+        background-color: lightgreen;
+        border: solid 10px rgba(0, 0, 0, 0.01);
+
         /* border-image: url("../images/border.png") 30 round; */
         border-image-source: url("../images/border.png");
         border-image-slice: 30;
@@ -50,7 +53,7 @@
     <h2>border-image</h2>
     <p>border-image: source slice width outset repeat | round | stretch;</p>
     <p>Safari doesn't work good for <i>round</i> mode.</p>
-    <div class="border-image">a</div>
+    <div class="border-image"></div>
     <p>This is the original image.</p>
     <img src="../images/border.png" />
   </body>
