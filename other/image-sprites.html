@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a.home img,
+      a.backward img,
+      a.forward img {
+        width: 44px;
+        height: 44px;
+      }
+
+      a.home img {
+        background: url("../images/img_navsprites_hover.gif") 0 0;
+      }
+      a.home:hover img {
+        background: url("../images/img_navsprites_hover.gif") 0 44px;
+      }
+      a.backward img {
+        background: url("../images/img_navsprites_hover.gif") 44px 1px;
+      }
+      a.backward:hover img {
+        background: url("../images/img_navsprites_hover.gif") 44px 45px;
+      }
+      a.forward img {
+        background: url("../images/img_navsprites_hover.gif") 88px 1px;
+      }
+      a.forward:hover img {
+        background: url("../images/img_navsprites_hover.gif") 88px 45px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="home" href="#"><img /></a>
+    <a class="backward" href="#"><img /></a>
+    <a class="forward" href="#"><img /></a>
+  </body>
+</html>
