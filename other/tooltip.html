@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.tooltip_container {
+        position: relative;
+        display: inline-block;
+      }
+
+      div.tooltip_container:hover div.tooltip {
+        /* display: block; */
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+
+      div.tooltip_container div.tooltip {
+        /* display: none; */
+        opacity: 0;
+
+        position: absolute;
+        z-index: 1;
+
+        padding: 8px;
+        top: -50%;
+        left: 110%;
+        min-width: 9em;
+
+        color: white;
+        background-color: darkgray;
+        border-radius: 6px;
+      }
+
+      div.tooltip_container div.tooltip::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%; /* 提示工具左侧 */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent darkgray transparent transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Tooltip</h2>
+    <div class="tooltip_container">
+      鼠标移上来试试
+      <div class="tooltip">
+        我就是 Tooltip 啦！
+      </div>
+    </div>
+  </body>
+</html>
