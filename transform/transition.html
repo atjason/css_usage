@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+      }
+
+      div:hover {
+        width: 300px;
+        transform: rotate(90deg);
+        transform-origin: 0 100%;
+        transition: width 1s, transform 1s linear 1s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Translation</h2>
+    <p>transition: property, duration, timing-function, delay;</p>
+
+    <div></div>
+  </body>
+</html>
