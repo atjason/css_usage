@@ -3,10 +3,7 @@
   <head>
     <style>
       div.pagination {
-        margin: 10px;
-        padding: 10px;
         text-align: center;
-        /* background-color: lightgreen; */
       }
 
       div.pagination ul {
@@ -20,6 +17,7 @@
         transition: 0.4s;
       }
       div.pagination li.active {
+        color: black;
         background-color: lightgreen;
       }
       div.pagination li:hover:not(.active) {
@@ -42,6 +40,7 @@
       }
       div.breadcrumb li+li::before {
         content: "/";
+        display: inline-block;
         color: black;
         padding-right: 6px;
       }
