@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes change_background_color {
+        from {
+          background-color: lightgreen;
+        }
+        to {
+          background-color: lightpink;
+        }
+      }
+      div.change_background_color {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        
+        animation: change_background_color 1s linear 0s infinite;
+      }
+
+      @keyframes move {
+        0%    { left: 0;      top: 0 }
+        25%   { left: 200px;  top: 0 }
+        50%   { left: 200px;  top: 200px }
+        75%   { left: 0;      top: 200px }
+        100%  { left: 0;      top: 0 }
+      }
+      div.move {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: lightgreen;
+        
+        animation: move 4s linear 0s infinite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Animation</h2>
+    <p>animation: name duration timing-function delay iteration-count direction play-state;</p>
+
+    <div class="change_background_color"></div>
+    <div class="move"></div>
+  </body>
+</html>
