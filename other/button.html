@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      button {
+        padding: 4px 8px;
+        margin: 4px;
+        color: white;
+        font-size: 1.1em;
+        border: none;
+        border-radius: 4px;
+      }
+
+      div.color button {
+        width: 60px;
+        height: 40px;
+      }
+      div.color .green {
+        background-color: #4CAF50;
+      }
+      div.color .red {
+        background-color: #f44336;
+      }
+      div.color .gray {
+        color: black;
+        background-color: #e7e7e7;
+      }
+
+      div.size button {
+        width: auto;
+        height: auto;
+        padding: 4px 8px;
+      }
+      div.size .button1 {
+        font-size: 1em;
+      }
+      div.size .button2 {
+        font-size: 1.4em;
+      }
+      div.size .button3 {
+        font-size: 2em;
+      }
+
+      div.hover button {
+        color: black;
+        border: solid 1px;
+        background-color: white;
+        transition: 0.4s;
+      }
+      div.hover .green {
+        border-color: #4CAF50;
+      }
+      div.hover .red {
+        border-color: #f44336;
+      }
+      div.hover .gray {
+        border-color: #e7e7e7;
+      }
+      div.hover button:hover {
+        color: white;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+      div.hover .green:hover {
+        background-color: #4CAF50;
+      }
+      div.hover .red:hover {
+        background-color: #f44336;
+      }
+      div.hover .gray:hover {
+        color: black;
+        background-color: #e7e7e7;
+      }
+
+      div.disabled .disabled {
+        color: black;
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      div.animation .hover {
+        width: 120px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #4CAF50;
+      }
+      div.animation .hover span {
+        transition: 0.6s;
+      }
+      div.animation .hover span::after {
+        content: ">>";
+        position: absolute;
+        margin-left: 4px;
+        opacity: 0;
+        transition: 0.6s;
+      }
+      div.animation .hover:hover span {
+        padding-right: 10px;
+      }
+      div.animation .hover:hover span::after {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Button Color</h2>
+    <div class="color">
+      <button class="green">Green</button>
+      <button class="red">Red</button>
+      <button class="gray">Gray</button>
+    </div>
+
+    <h2>Button Size</h2>
+    <div class="size">
+      <button class="button1">1em</button>
+      <button class="button2">1.4em</button>
+      <button class="button3">2em</button>
+    </div>
+
+    <h2>Button Border, Hover and Shadow</h2>
+    <div class="hover">
+      <button class="green">Green</button>
+      <button class="red">Red</button>
+      <button class="gray">Gray</button>
+    </div>
+
+    <h2>Button Disabled</h2>
+    <div class="disabled">
+      <button class="disabled">Disabled</button>
+    </div>
+
+    <h2>Button Animation</h2>
+    <div class="animation">
+      <button class="hover">
+        <span>Hover</span>
+      </button>
+    </div>
+  </body>
+</html>
