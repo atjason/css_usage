@@ -6,13 +6,15 @@
         width: 100px;
         height: 100px;
         background-color: lightgreen;
+
+        transition: transform 1s linear, width 1s linear 1s, background-color 1s linear 2s;
       }
 
       div:hover {
+        background-color: lightpink;
         width: 300px;
         transform: rotate(90deg);
-        transform-origin: 0 100%;
-        transition: width 1s, transform 1s linear 1s;
+        transition: background-color 1s, width 1s linear 1s, transform 1s linear 2s;
       }
     </style>
   </head>
