@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.border {
+        display: inline-block;
+        padding: 4px 4px 2px;
+        border-radius: 4px;
+        border: solid 1px lightgray;
+        transition: 0.3s;
+      }
+
+      div.border:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
+
+      img.responsive {
+        width: 100%;
+        height: auto;
+      }
+
+      img.filter {
+        width: 33%;
+        height: auto;
+        float: left; 
+        max-width: 235px;
+      }
+
+      .blur {-webkit-filter: blur(4px);filter: blur(4px);}
+      .brightness {-webkit-filter: brightness(250%);filter: brightness(250%);}
+      .contrast {-webkit-filter: contrast(180%);filter: contrast(180%);}
+      .grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+      .huerotate {-webkit-filter: hue-rotate(180deg);filter: hue-rotate(180deg);}
+      .invert {-webkit-filter: invert(100%);filter: invert(100%);}
+      .opacity {-webkit-filter: opacity(50%);filter: opacity(50%);}
+      .saturate {-webkit-filter: saturate(7); filter: saturate(7);}
+      .sepia {-webkit-filter: sepia(100%);filter: sepia(100%);}
+      .shadow {-webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green);}
+    </style>
+  </head>
+
+  <body>
+    <h2>Border</h2>
+    <div class="border">
+      <img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzs7hchgbwj30b408ct98.jpg" />
+    </div>
+
+    <h2>Responsive Image</h2>
+    <img class="responsive" src="https://ws3.sinaimg.cn/large/006tNc79gy1fzs7khf4awj30rs08ct9o.jpg" />
+
+    <h2>Responsive Image</h2>
+    <img class="filter" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter blur" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter brightness" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter contrast" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter grayscale" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter huerotate" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter invert" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter opacity" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter saturate" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter sepia" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+    <img class="filter shadow" src="https://ws2.sinaimg.cn/large/006tNc79gy1fzs7nsx1wcj308c08c3yo.jpg" />
+  </body>
+</html>
