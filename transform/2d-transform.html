@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+      }
+      
+      .card {
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 1px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .card .box,
+      .card .fill {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+      }
+
+      .card .box {
+        background-color: lightgray;
+      }
+
+      .card .fill {
+        margin: 0;
+        transition: transform 0.5s;
+        background-color: lightgreen;
+      }
+
+      .card .rotate:hover {
+        transform: rotate(45deg);
+      }
+
+      .card .rotateX:hover {
+        transform: rotateX(45deg);
+      }
+
+      .card .rotateY:hover {
+        transform: rotateY(45deg);
+      }
+
+      .card .rotateZ:hover {
+        transform: rotateZ(45deg);
+      }
+
+      .card .scale:hover {
+        transform: scale(2);
+      }
+
+      .card .scaleX:hover {
+        transform: scaleX(2);
+      }
+
+      .card .scaleY:hover {
+        transform: scaleY(2);
+      }
+
+      .card .skew:hover {
+        transform: skew(45deg, 45deg);
+      }
+
+      .card .skewX:hover {
+        transform: skewX(45deg);
+      }
+
+      .card .skewY:hover {
+        transform: skewY(45deg);
+      }
+
+      .card .translate:hover {
+        transform: translate(45px, 45px);
+      }
+
+      .card .translateX:hover {
+        transform: translateX(45px);
+      }
+
+      .card .translateY:hover {
+        transform: translateY(45px);
+      }
+
+      .card .matrix:hover {
+        transform: matrix(2, 2, 0, 2, 45, 0);
+      }
+
+      .origin-0-0 {
+        transform-origin: 0 0;
+      }
+
+      .origin-100-100 {
+        transform-origin: 100% 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Transform</h1>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill rotate"></div>
+      </div>
+      <p>rotate(45deg)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill rotateX"></div>
+      </div>
+      <p>rotateX(45deg)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill rotateY"></div>
+      </div>
+      <p>rotateY(45deg)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill rotateZ"></div>
+      </div>
+      <p>rotateZ(45deg)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill scale"></div>
+      </div>
+      <p>scale(2)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill scaleX"></div>
+      </div>
+      <p>scaleX(2)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill scaleY"></div>
+      </div>
+      <p>scaleY(2)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill skew"></div>
+      </div>
+      <p>skew(45deg, 45deg)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill skewX"></div>
+      </div>
+      <p>skewX(45deg)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill skewY"></div>
+      </div>
+      <p>skewY(45deg)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill translate"></div>
+      </div>
+      <p>translate(45px, 45px)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill translateX"></div>
+      </div>
+      <p>translateX(45px)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill translateY"></div>
+      </div>
+      <p>translateY(45px)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill matrix"></div>
+      </div>
+      <p>matrix(2, 2, 0, 2, 45, 0)</p>
+    </div>
+
+    <h2>Transform Origin</h2>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill rotate origin-0-0"></div>
+      </div>
+      <p>rotate (left top)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill rotate origin-100-100"></div>
+      </div>
+      <p>rotate (right bottom)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill scale origin-0-0"></div>
+      </div>
+      <p>scale (left top)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill scale origin-100-100"></div>
+      </div>
+      <p>scale (right bottom)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill scaleX origin-0-0"></div>
+      </div>
+      <p>scaleX (left top)</p>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="fill scaleY origin-100-100"></div>
+      </div>
+      <p>scaleY (right bottom)</p>
+    </div>
+  </body>
+</html>

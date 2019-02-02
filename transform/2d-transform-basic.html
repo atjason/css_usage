@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 150px;
+        height: 100px;
+        background-color: yellowgreen;
+      }
+
+      div.translate:hover {
+        transform: translate(20px, 10px);
+      }
+
+      div.rotate:hover {
+        transform: rotate(30deg);
+      }
+
+      div.scale:hover {
+        transform: scale(3, 2);
+      }
+
+      div.skew_x:hover {
+        transform: skew(30deg, 0);
+      }
+      div.skew_y:hover {
+        transform: skew(0, 20deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Translate</h2>
+    <p>Translate when mouse over: x -> 20px, y -> 10px</p>
+    <div class="translate"></div>
+
+    <h2>Rotate</h2>
+    <p>Rotate when mouse over: 30deg</p>
+    <div class="rotate"></div>
+
+    <h2>Scale</h2>
+    <p>Scale when mouse over: x -> 3x, y -> 2x</p>
+    <div class="scale"></div>
+
+    <h2>Skew</h2>
+    <p>Skew when mouse over: x -> 30deg</p>
+    <div class="skew_x"></div>
+    <p>Skew when mouse over: y -> 20deg</p>
+    <div class="skew_y"></div>
+
+    <h2>Matrix</h2>
+    <a href="https://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/">Tutorial</a>
+  </body>
+</html>
