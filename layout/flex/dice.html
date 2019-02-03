@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    div.shape {
+      width: 120px;
+      height: 120px;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+      background-color: white;
+    }
+
+    div.container1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.container3 {
+      display: flex;
+    }
+    div.container3 span:nth-child(2) {
+      align-self: center;
+    }
+    div.container3 span:nth-child(3) {
+      align-self: flex-end;
+    }
+
+    div.container4 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    div.container5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.container6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.column {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    span.item {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.2);
+      background-color: darkgray;
+    }
+  </style>
+</head>
+
+  <body>
+    <div class="shape container1">
+      <span class="item"></span>
+    </div>
+
+    <div class="shape container2">
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
+
+    <div class="shape container3">
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
+
+    <div class="shape container4">
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+    </div>
+
+    <div class="shape container5">
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="column">
+        <span class="item"></span>
+      </div>
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+    </div>
+
+    <div class="shape container6">
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+    </div>
+  </body>
+</html>
