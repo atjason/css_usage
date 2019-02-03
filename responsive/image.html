@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div.background-image {
+      width: 100%;
+      height: 400px;
+      margin-right: 10px;
+      border: solid 1px blue;
+      background-repeat: no-repeat;
+      background-image: url(../images/flower.jpg);
+    }
+
+    div.background-size-auto {
+      background-size: auto;
+    }
+    div.background-size-contain {
+      background-size: contain;
+    }
+    div.background-size-cover {
+      background-size: cover;
+    }
+    div.background-size-size {
+      background-size: 100px 100px;
+    }
+    div.background-size-percent {
+      background-size: 80% 60%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>background-size: auto;</h2>
+  <div class="background-image background-size-auto"></div>
+
+  <h2>background-size: contain;</h2>
+  <div class="background-image background-size-contain"></div>
+
+  <h2>background-size: cover;</h2>
+  <div class="background-image background-size-cover"></div>
+
+  <h2>background-size: size;</h2>
+  <div class="background-image background-size-size"></div>
+
+  <h2>background-size: percent;</h2>
+  <div class="background-image background-size-percent"></div>
+</body>
+</html>
