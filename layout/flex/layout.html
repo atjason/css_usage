@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    div.grid {
+      text-align: center;
+      border: solid 1px gray;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    div.grid div.grid-cell {
+      padding: 10px;
+      border: solid 4px white;
+      background-color: lightgray;
+    }
+
+    div.grid div.part-1-2 {
+      flex-basis: 50%;
+    }
+    div.grid div.part-1-3 {
+      flex-basis: 33.3%;
+    }
+    div.grid div.part-1-4 {
+      flex-basis: 25%;
+    }
+    div.grid div.grow {
+      flex-grow: 2;
+    }
+
+    .align-left {
+      text-align: left;
+    }
+
+    /* header, footer {
+      flex: 1;
+    } */
+
+    div.page {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      border: solid 1px gray;
+    }
+    div.page div {
+      padding: 10px;
+    }
+    div.page div.header {
+      flex-basis: 100%;
+      background-color: antiquewhite;
+    }
+    div.page div.footer {
+      flex-basis: 100%;
+      background-color: lightgray;
+    }
+    div.page div.body {
+      padding: 0;
+      flex-basis: 100%;
+      display: flex;
+    }
+    div.page div.left {
+      flex: 0 0 10rem;
+      background-color: lightcoral;
+    }
+    div.page div.center {
+      flex: 1 1;
+      background-color: lightskyblue;
+    }
+    div.page div.right {
+      flex: 0 0 6rem;
+      background-color: lightpink;
+    }
+
+    @media screen and (max-width: 768px) {
+      div.page div.body {
+        flex-direction: column;
+      }
+
+      div.page div.left,
+      div.page div.center,
+      div.page div.right {
+        flex: 1;
+      }
+  </style>
+</head>
+
+<body>
+  <h2>Grid</h2>
+  <div class="grid">
+    <div class="grid-cell part-1-2">1/2</div>
+    <div class="grid-cell part-1-2">1/2</div>
+    <div class="grid-cell part-1-3">1/3</div>
+    <div class="grid-cell part-1-3">1/3</div>
+    <div class="grid-cell part-1-3">1/3</div>
+    <div class="grid-cell part-1-4">1/4</div>
+    <div class="grid-cell grow">auto</div>
+    <div class="grid-cell grow">auto</div>
+    <div class="grid-cell part-1-4">1/4</div>
+    <div class="grid-cell part-1-2 align-left">Hello world.</div>
+    <div class="grid-cell part-1-2 align-left">Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. Hello world. </div>
+  </div>
+
+  <h2>Page</h2>
+  <div class="page">
+    <div class="header">header</div>
+    <div class="body">
+      <div class="left">left</div>
+      <div class="center">center</div>
+      <div class="right">right</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>
