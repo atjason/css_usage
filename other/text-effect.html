@@ -36,12 +36,21 @@
         word-break: keep-all;
       }
 
-      div.word_wrap p {
-        width: 9em;
+      div.white-space {
+        /* width: 9em; */
         border: solid 1px;
       }
-      div.word_wrap p.break_word {
-        word-wrap: break-word;
+      div.white-space p.pre {
+        white-space: pre;
+      }
+      div.white-space p.pre-wrap {
+        white-space: pre-wrap;
+      }
+      div.white-space p.pre-line {
+        white-space: pre-line;
+      }
+      div.white-space p.no-wrap {
+        white-space: no-wrap;
       }
     </style>
   </head>
@@ -71,6 +80,18 @@
     <h2>Word Wrap</h2>
     <div class="word_wrap">
       <p class="break_word"><b>break-word</b>: This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+    </div>
+
+    <h2>white-space</h2>
+    <div class="white-space">
+      <p class="pre"><b>pre</b>: Hello 
+        World. </p>
+      <p class="pre-wrap"><b>pre-wrap</b>: Hello 
+        World. </p>
+      <p class="pre-line"><b>pre-line</b>: Hello 
+        World. </p>
+      <p class="no-wrap"><b>no-wrap</b>: Hello 
+        World. </p>
     </div>
 
   </body>
